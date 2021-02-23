@@ -1,0 +1,192 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    	{
+		    "path": "pages/home/home",
+			"style": {
+			   "enablePullDownRefresh": true, // 下拉刷新 
+			   "onReachBottomDistance": 10,  // 上拉加载
+			   "navigationStyle": "custom"
+			} 
+	    },
+		{
+			"path": "pages/classify/classify",
+			"style": {
+				"navigationBarTitleText": "商品分类",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [
+							{
+								"text": "",
+								"fontSize":"30",
+								"float":"left",
+								"color":"#FFFFFF",
+								"width": "30px",
+								"type": "back"
+							},
+							{
+								"text": "",
+								"fontSize":"16",
+								"float":"right",
+								"color": "#FFFFFF",
+								"fontWeight":"bold",
+								"width": "30px"
+							}
+						],
+						"searchInput": {
+							"align": "left",
+							"placeholder": "冬季羽绒服",
+							"borderRadius": "50rpx",
+							"backgroundColor": "#fff",
+							"disabled": "true",
+							"autoFocus": "true"
+						}
+					}
+				}
+				
+			}
+			
+		},
+		{
+			"path": "pages/television/television",
+			"style": {
+				"navigationBarTitleText": "曲面电视",
+				"enablePullDownRefresh": true,
+				"backgroundTextStyle": "dark",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [
+							{
+								"text": "搜索",
+								"fontSize":"16",
+								"float":"right",
+								"color": "#FFFFFF",
+								"fontWeight":"bold",
+								"width": "50px"
+							}
+						],
+						"searchInput": {
+							"align": "left",
+							"placeholder": "",
+							"borderRadius": "50rpx",
+							"backgroundColor": "#fff",
+							"autoFocus": "true",
+							"disabled": "true"
+						}
+					}
+				}
+			}
+		},
+		// 商品详情
+		{
+			"path": "pages/detial/detial",
+			"style": {
+				"navigationBarTitleText": "商品详情"
+			}
+		},
+		// 购物车
+		{
+			"path": "pages/cart/cart",
+			"style": {
+				"navigationBarTitleText": "购物车",
+				"navigationStyle": "custom"
+			}
+			
+		},
+		{
+			"path":"pages/order/order",
+			"style": {
+				"navigationBarTitleText": "订单列表"
+				
+			}
+		},
+		// 结算
+		{
+		  "path": "pages/cart/pay",
+		  "style": {
+			  "navigationStyle": "custom"
+		  }
+		},
+		// 我的
+		{
+			"path": "pages/myself/myself",
+			"style": {
+				"navigationBarTitleText":"我的京东"
+			}
+		},
+		// 搜索页面
+		{
+			"path": "pages/search/search", 
+			"style": {
+				"app-plus": {
+					"titleNView": {
+						"buttons": [
+							{
+								"text": "",
+								"fontSize":"16",
+								"float":"right",
+								"color": "#FFFFFF",
+								"fontWeight":"bold",
+								"width": "50px"
+								
+							}
+						],
+						"searchInput": {
+							"align": "left",
+							"placeholder": "请输入您要搜索的内容",
+							"borderRadius": "50rpx",
+							"backgroundColor": "#fff",
+							"autoFocus": "true"
+						}
+					}
+				}
+			}
+		},
+		// 登录 注册
+		{
+			"path":"pages/login/login"
+			
+		},
+		// 收藏
+		{
+			"path":"pages/collect/collect"
+		}
+		
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "京东购物",
+		"navigationBarBackgroundColor": "#b50e03",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+	    "color": "#7A7E83",
+	    "selectedColor": "#3cc51f",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+		"selectedColor": "#b50e03",
+	    "list": [{
+	        "pagePath": "pages/home/home",
+	        "iconPath": "static/home.png",
+	        "selectedIconPath": "static/home_select.png",
+	        "text": "首页"
+	    }, {
+	        "pagePath": "pages/classify/classify",
+	        "iconPath": "static/classify.png",
+	        "selectedIconPath": "static/classify_select.png",
+	        "text": "分类"
+	    },
+		{
+			"pagePath": "pages/cart/cart",
+			"iconPath": "static/cart.png",
+			"selectedIconPath": "static/cart_select.png",
+			"text": "购物车"
+		},
+		{
+			"pagePath": "pages/myself/myself",
+			"iconPath": "static/myself.png",
+			"selectedIconPath": "static/myself_select.png",
+			"text": "我的"
+		}
+	  ]
+	}
+}
